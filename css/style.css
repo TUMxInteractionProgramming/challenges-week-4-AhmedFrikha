@@ -127,12 +127,34 @@ li .channel-meta {
     position: absolute;
     right: 16px;
     top: 12px;
+    display: flex;
 }
 
-li img {
-    vertical-align: middle;
-}
 
+li .channel-meta span {
+    /* #8 #channel #boxes for the additional metadata */
+    /* color */
+    background-color: #3F51B5;
+    color: white;
+    /* appearance */
+    margin:2px;
+    padding:2px;
+    border-radius:2px;
+    font-size:10px;
+
+    /* #8 #channel #centered blue boxes' text content */
+    align-self:center;
+}
+li i {
+    position:absolute;
+    right: 24px;
+    /* #7 #icns #small adjust icon size */
+    font-size:24px;
+}
+li i.fa {
+    /* #7 #icns #small in channels view */
+    font-size: 24px;
+}
 li.selected {
     color: #3F51B5;
     border-left: 4px solid #3F51B5;
@@ -172,9 +194,10 @@ li.selected {
     border-bottom: 4px solid #3F51B5;
 }
 
-#tab-bar button img {
+#tab-bar button i {
     display: block;
     margin: 0 auto 4px auto;
+    font-size: 24px;
 }
 
 /* #5 CHAT BAR */
@@ -185,6 +208,9 @@ li.selected {
     flex-grow: 0;
 }
 
+#chat-bar button i{
+    font-size: 24px;
+}
 #emojis {
     /* #5 #smileys #emojis menu */
     /* colors and borders */
@@ -269,4 +295,11 @@ li.selected {
 
 .message.own {
     margin-left: 17.5%;
+}
+
+#chat-bar input{
+    
+    border: none;
+    flex-grow: 1;
+    font-size: 16px;
 }
